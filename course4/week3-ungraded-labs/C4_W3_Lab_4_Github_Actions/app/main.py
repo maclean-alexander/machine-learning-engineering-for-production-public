@@ -7,6 +7,8 @@ from pydantic import BaseModel, conlist
 # adding a comment to make change for push
 # in order to trigger GitHub Action
 
+# Adding another comment - actions were not enabled
+
 app = FastAPI(title="Predicting Wine Class with batching")
 
 # Open classifier in global scope
