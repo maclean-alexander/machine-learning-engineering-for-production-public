@@ -22,7 +22,7 @@ def test_accuracy():
 def test_pipeline_and_scaler():
 
     # check if clf is an instance of sklearn.pipeline.Pipeline
-    isPipeline = isinstance(clf, Pipepline)
+    isPipeline = isinstance(clf, Pipeline)
     assert isPipeline
 
     if isPipeline:
