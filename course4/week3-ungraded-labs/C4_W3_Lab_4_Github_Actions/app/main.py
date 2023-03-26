@@ -4,15 +4,10 @@ from typing import List
 from fastapi import FastAPI
 from pydantic import BaseModel, conlist
 
-# adding a comment to make change for push
-# in order to trigger GitHub Action
-
-# Adding another comment - actions were not enabled
-
 app = FastAPI(title="Predicting Wine Class with batching")
 
 # Open classifier in global scope
-with open("models/wine.pkl", "rb") as file:
+with open("models/wine-95.pkl", "rb") as file:
     clf = pickle.load(file)
 
 
